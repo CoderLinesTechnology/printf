@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+*_print_oct - Function to convert dec to oct
+*@val: integer value parameter
+*Return: counter
+*/
+
 int _print_oct(va_list val)
 {
 	int i, counter = 0;
