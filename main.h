@@ -22,6 +22,6 @@ int _print_bin(va_list val);
 int _print_oct(va_list val);
 int _print_hex(va_list val);
 int _print_HEX(va_list val);
-
+int _print_HEX_extra(unsigned int num);
 
 #endif
