@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_per: prints % sign
+ * _print_per - prints % sign
  * Return: integer
  */
 
