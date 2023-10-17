@@ -2,7 +2,7 @@
 
 /**
  * _print_char - prints a character
- * @c: character parameter 
+ * @c: character parameter
  * Return: 1
  */
 
