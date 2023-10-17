@@ -5,7 +5,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <limits.h>
+#include <limits.>
+
+typedef struct format
+{
+	char *id;
+	int (*f)();
+} convert_match;
 
 int _printf(const char *format, ...);
 int _print_char(va_list c);
