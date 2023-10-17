@@ -4,9 +4,8 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
-
-
-
+#include <unistd.h>
+#include <limits.h>
 
 int _printf(const char *format, ...);
 int _print_char(va_list c);
@@ -28,6 +27,7 @@ int _print_rev_string(va_list val);
 int _print_hex_extra(unsigned long int num);
 
 
+int _print_rot13(va_list args);
 
 
 
