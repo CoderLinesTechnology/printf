@@ -6,8 +6,6 @@
 #include <stdio.h>
 
 
-
-
 int _printf(const char *format, ...);
 int _print_char(va_list c);
 int _putchar(char c);
@@ -25,4 +23,8 @@ int _print_HEX(va_list val);
 int _print_HEX_extra(unsigned int num);
 int _print_exc_string(va_list val);
 int _print_rev_string(va_list val);
+int _print_rot13(va_list args);
+
+
+
 #endif
