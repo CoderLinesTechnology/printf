@@ -4,7 +4,8 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <unistd.h>
+#include <limits.h>
 
 int _printf(const char *format, ...);
 int _print_char(va_list c);
