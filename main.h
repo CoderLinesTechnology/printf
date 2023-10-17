@@ -2,7 +2,8 @@
 #define MAIN_H
 
 #include <stdarg.h>
-
+#include <stdlib.h>
+#include <stdio.h>
 
 
 
