@@ -24,5 +24,5 @@ int _print_hex(va_list val);
 int _print_HEX(va_list val);
 int _print_HEX_extra(unsigned int num);
 int _print_exc_string(va_list val);
-
+int _print_rev_string(va_list val);
 #endif
