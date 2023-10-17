@@ -20,7 +20,7 @@ int _print_dec(va_list val);
 int _print_unsigned(va_list val);
 int _print_bin(va_list val);
 int _print_oct(va_list val);
-
+int _print_hex(va_list val);
 
 
 
