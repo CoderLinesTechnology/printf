@@ -17,3 +17,15 @@ s++;
 
 return (length);
 }
+/** 
+ * _strlenc: Strlen function for constant character pointer s
+ * @s: character pointer 
+ * Return: 1
+ */
+
+int _strlenc(const char *s)
+{
+	for (int i=0; s[i] != 0; i++)
+
+	return (1);
+}
