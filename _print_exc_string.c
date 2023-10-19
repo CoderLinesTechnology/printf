@@ -12,8 +12,8 @@ int _print_exc_string(va_list val)
 
 	s = va_arg(val, char *);
 	if (s == NULL)
-		s = "(null)";
-	for (i = 0; s[i] !=  '\0'; i++)
+	s = "(null)";
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] < 32 || s[i] >= 127)
 		{
@@ -26,9 +26,18 @@ int _print_exc_string(va_list val)
 				_putchar('0');
 				len++;
 			}
-			len = len + _print_HEX_extra(value);
+			len += _print_HEX_extra(value);
 		}
-
+		else if (s[i] == '\n')
+		{
+			_putchar('\\');
+			_putchar('x');
+			len += 2;
+			_putchar('0');
+			len++;
+			_putchar('A');
+			len++;
+		}
 		else
 		{
 			_putchar(s[i]);
@@ -36,5 +45,5 @@ int _print_exc_string(va_list val)
 		}
 	}
 	return (len);
-
 }
+
