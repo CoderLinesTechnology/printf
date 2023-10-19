@@ -27,7 +27,7 @@ int _print_hex(va_list val)
 	for (i = counter - 1; i >= 0; i++)
 	{
 		if (array[i] > 9)
-			array = array[i] + 39;
+			array[i] += 39;
 		_putchar(array[i] + '0');
 	}
 	free(array);

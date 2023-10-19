@@ -20,8 +20,7 @@ int _print_s(va_list val)
 	{
 		length = _strlen(str);
 		for (i = 0; i < length; i++)
-		_putchar(str[i];
+		_putchar(str[i]);
 		return (length);
 	}
-
-
+}

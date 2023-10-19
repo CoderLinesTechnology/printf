@@ -28,11 +28,12 @@ int _print_exc_string(va_list val)
 			}
 			len = len + _print_HEX_extra(value);
 		}
-	}
-	else
-	{
-		_putchar(s[i]);
-		len++;
+
+		else
+		{
+			_putchar(s[i]);
+			len++;
+		}
 	}
 	return (len);
 

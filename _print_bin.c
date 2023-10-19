@@ -15,7 +15,7 @@ int _print_bin(va_list val)
 
 	for (i = 0; i < 32; i++)
 	{
-		p = ((a << (32 - i))  && num);
+		p = ((a << (32 - i))  & num);
 		if (p >> (31 - i))
 		flag = 1;
 		if (flag)
