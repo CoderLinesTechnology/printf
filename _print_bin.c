@@ -7,29 +7,32 @@
 
 int _print_bin(va_list val)
 {
-	int flag = 0;
-	int cont = 0;
-	int i, a = 1, b;
 	unsigned int num = va_arg(val, unsigned int);
-	unsigned int p;
+	int count = 0;
+	unsigned int mask = 1U << (sizeof(unsigned int) * 8 - 1);
+	int flag = 0;
 
-	for (i = 0; i < 32; i++)
+	while (mask > 0)
 	{
-		p = ((a << (32 - i))  & num);
-		if (p >> (31 - i))
-		flag = 1;
-		if (flag)
+		if (num & mask)
 		{
-			b = p >> (31 - i);
-			_putchar(b + 48);
-			cont++;
+			_putchar('1');
+			count++;
+			flag = 1;
 		}
+		else if (flag)
+		{
+			_putchar('0');
+			count++;
+		}
+		mask >>= 1;
 	}
-	if (cont == 0)
-	{
-		cont++;
-		_putchar('0');
-	}
-	return (cont);
 
+	if (count == 0)  /* If the number is 0, print '0' */
+	{
+		_putchar('0');
+		count++;
+	}
+
+	return count;
 }
